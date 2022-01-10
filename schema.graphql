@@ -1,0 +1,16 @@
+type Company {
+  id: String
+  name: String
+  description: String
+}
+
+type User {
+  id: String
+  name: String
+  age: Int
+}
+
+type Query {
+  company(id: String): [Company]
+  user(id: String): [User]
+}
